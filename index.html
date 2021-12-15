@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Analytics - This is an example dashboard created using build-in elements and components.</title>
+    <title>HBC Select - The platform where you select what you want to watch!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
     />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
@@ -29,11 +29,7 @@
                 <div class="app-sidebar bg-royal sidebar-text-light">
                     <div class="app-header__logo">
                         <a href="#" data-toggle="tooltip" data-placement="bottom" title="HBC Select" class="logo-src"></a>
-                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                        </button>
+
                     </div>
                     <div class="scrollbar-sidebar scrollbar-container">
                         <div class="app-sidebar__inner">
@@ -137,7 +133,7 @@
                 <div class="app-main__inner">
                     <div class="header-mobile-wrapper">
                         <div class="app-header__logo">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="KeroUI Admin Template" class="logo-src"></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="HBC Select" class="logo-src"></a>
                             <button type="button" class="hamburger hamburger--elastic mobile-toggle-sidebar-nav">
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
@@ -164,7 +160,41 @@
                         <div class="app-header-overlay d-none animated fadeIn"></div>
                     </div>
                     <div class="app-inner-layout app-inner-layout-page">
-                        content here
+                        <div class="container"> 
+                            <div class="row">
+                                <span class="playlist"></span>
+                            </div>
+                        </div>   
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script>
+$.ajax({ 
+    type: 'GET', 
+    url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1000&playlistId=PLgWZo34t9OQ893F-Kt4mRF7bg_r182jHA&key=AIzaSyBPC9k__OpCDm34JWN-SjHix1ffxM6B8g8', 
+    dataType: 'json',
+    success: function (data) { 
+
+        let items = data.items;
+        let playlist = '';
+
+        for (var i = 0; i<items.length; i++) {
+            console.log(items[i].snippet);
+            playlist += ` <div class="main-card">
+                                <a href="https://www.youtube.com/watch?v=${items[i].snippet.resourceId.videoId}">
+                                <img src="${items[i].snippet.thumbnails.medium.url}"  alt="Card image cap" class="card-img-top">
+                            <div class="card-footer bg-royal text-white">
+                                ${items[i].snippet.title}
+                            </div>
+                            </div>`
+        }
+
+        document.querySelector('.playlist').innerHTML = playlist;
+    }
+});
+                    </script>
+                        
+
+
                     </div>
                 </div>
             </div>
