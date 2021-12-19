@@ -18,113 +18,21 @@
 <link href="main.07a59de7b920cd76b874.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 <link rel="stylesheet" href="assets/pe-icon-7-stroke/css/helper.css">
+<style>
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: none;
+}
+</style>
 </head>
-<body>
-<div class="app-container app-theme-gray">
+<body onload="setTime();">
+<div class="app-container app-theme-gray app-sidebar-full">
         <div class="app-main">
-            <div class="app-sidebar-wrapper">
-                <div class="app-sidebar bg-royal sidebar-text-light">
-                    <div class="app-header__logo">
-                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="HBC Select" class="logo-src"></a>
+        <?php include("assets/content/sidebar.txt"); ?>
 
-                    </div>
-                    <div class="scrollbar-sidebar scrollbar-container">
-                        <div class="app-sidebar__inner">
-                            <ul class="vertical-nav-menu">
-                                <li class="app-sidebar__heading">Heading</li>
-                                <li class="mm-active">
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>
-                                        Nav 1
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul class="mm-show">
-                                        <li><a  class="mm-active" href="#">Sub-Nav-1</a></li>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-browser"></i>
-                                        Nav 2
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                        <li><a href="#">Sub-Nav-1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="app-sidebar__heading">Heading 2</li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-diamond"></i>
-                                        Nav 3
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="metismenu-icon"></i>
-                                                Sub-Nav-2
-                                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                            </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="metismenu-icon">
-                                                        </i>Sub-Sub-Nav-1
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="metismenu-icon">
-                                                        </i>Sub-Sub-Nav-1
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="metismenu-icon">
-                                                </i>Sub-Nav-2
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="metismenu-icon">
-                                                </i>Sub-Nav-2
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="app-sidebar__heading">Singular </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-graph2">
-                                        </i>Single-Nav
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-graph">
-                                        </i>Single-Nav
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-graph1">
-                                        </i>Single-Nav
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
             <div class="app-sidebar-overlay d-none animated fadeIn"></div>
             <div class="app-main__outer">
                 <div class="app-main__inner">
@@ -157,41 +65,288 @@
                         <div class="app-header-overlay d-none animated fadeIn"></div>
                     </div>
                     <div class="app-inner-layout app-inner-layout-page">
-                        <div class="container"> 
+                        <div class="container-fluid"> 
                             <div class="row">
-                                <span class="playlist"></span>
+
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="1.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-primary">LIVE</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="2.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-primary">LIVE</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="3.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="4.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="5.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="6.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="7.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="8.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="9.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="10.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="11.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading" data-toggle="tooltip" data-placement="top" title="" data-original-title="Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">December 24, 2021 6:30 pm GMT</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">UPCOMING</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <a href="hbc" class="custom-card">
+                                    <img width="100%" src="12.jpg" class="card-img-top">
+                                    <div class="card-shadow-focus mb-3 widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Protesters demonstrate against Sudan military coup on 3rd anniversary of revolution fdgdgfgfdgfdgfdg</div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-progress-wrapper">
+                                                <div class="progress-bar-xs mb-3 progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                </div>
+                                                <div class="progress-sub-label">
+                                                    <div class="sub-label-left"><span class="dateofmatch">Published</span></div>
+                                                    <div class="sub-label-right"><div class="badge badge-dark">VOD</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>    
+                                </div>
+
                             </div>
                         </div>   
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script>
-$.ajax({ 
-    type: 'GET', 
-    url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=PLgWZo34t9OQ893F-Kt4mRF7bg_r182jHA&key=AIzaSyBPC9k__OpCDm34JWN-SjHix1ffxM6B8g8', 
-    dataType: 'json',
-    success: function (data) { 
-
-        let items = data.items;
-        let playlist = '';
-
-        for (var i = 0; i<items.length; i++) {
-            console.log(items[i].snippet);
-            playlist += ` <div class="main-card">
-                                <a href="youtube.php?id=${items[i].snippet.resourceId.videoId}">
-                                <img src="${items[i].snippet.thumbnails.medium.url}"  alt="Card image cap" class="card-img-top">
-                            <div class="card-footer bg-royal text-white">
-                                ${items[i].snippet.title}
-                            </div>
-                            </div>`
-        }
-
-        document.querySelector('.playlist').innerHTML = playlist;
-    }
-});
-                    </script>
-                        
-
-
                     </div>
                 </div>
             </div>
@@ -199,5 +354,59 @@ $.ajax({
     </div>
 </div>
 <div class="app-drawer-overlay d-none animated fadeIn"></div>
-<script type="text/javascript" src="assets/scripts/main.07a59de7b920cd76b874.js"></script></body>
+<script>
+    function setTime()
+    {
+    var timestamp = document.getElementsByClassName('timestamp');
+    var dateofmatch = document.getElementsByClassName('dateofmatch');
+    var t, h, min, pm, months;
+    var tempTimestamp = [];
+    var tempDateofmatch = [];
+ 
+ 
+    for (var i = 0; i < timestamp.length; i++)
+    {
+        t = new Date(timestamp[i].innerHTML),
+            hours = t.getHours(),
+            min = t.getMinutes() + '',
+            pm = false,
+            months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+ 
+        if (hours > 11) {
+            hours = hours - 12;
+            pm = true;
+        }
+ 
+        if (hours == 0) hours = 12;
+        if (min.length == 1) min = '0' + min;
+      
+      
+ 
+        timestamp[i].innerHTML = hours + ':' + min + ' ' + (pm ? 'pm' : 'am') + "<br/>";
+    }
+
+    for (var i = 0; i < dateofmatch.length; i++)
+    {
+        t = new Date(dateofmatch[i].innerHTML),
+            hours = t.getHours(),
+            min = t.getMinutes() + '',
+            pm = false,
+            months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+ 
+        if (hours > 11) {
+            hours = hours - 12;
+            pm = true;
+        }
+ 
+        if (hours == 0) hours = 12;
+        if (min.length == 1) min = '0' + min;
+      
+      
+        // choose output values
+        dateofmatch[i].innerHTML = months[t.getMonth()] + ' ' + t.getDate() + ', ' + t.getFullYear() + "<br/>";
+    }
+}
+</script>
+<script type="text/javascript" src="assets/scripts/main.07a59de7b920cd76b874.js"></script>
+</body>
 </html>
