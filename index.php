@@ -76,7 +76,7 @@ a.custom-card:hover {
 
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="1.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/1.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -99,7 +99,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="2.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/2.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -122,7 +122,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="3.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/3.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -145,7 +145,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="4.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/4.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -168,7 +168,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="5.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/5.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -191,7 +191,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="6.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/6.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -214,7 +214,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="7.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/7.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -237,7 +237,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="8.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/8.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -260,7 +260,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="9.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/9.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -283,7 +283,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="10.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/10.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -306,7 +306,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="11.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/11.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -329,7 +329,7 @@ a.custom-card:hover {
                                 </div>
                                 <div class="col-md-6 col-xl-3">
                                     <a href="hbc" class="custom-card">
-                                    <img width="100%" src="12.jpg" class="card-img-top">
+                                    <img width="100%" src="assets/images/temp/12.jpg" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">

@@ -12,6 +12,7 @@
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <link rel="icon" href="favicon.ico">
 
+    <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
 <link href="main.07a59de7b920cd76b874.css" rel="stylesheet">
@@ -67,12 +68,15 @@ a.custom-card:hover {
                                 HBC Select is your go-to source for all things HBC Network including news and esports.
                             </div>
                         </div>
+                        <?php 
+                            $data = $_GET["data"]; 
+                            include("assets/content/seasons/$data.txt"); 
+                        ?>
                         <div class="app-header-overlay d-none animated fadeIn"></div>
                     </div>
                     <div class="app-inner-layout app-inner-layout-page">
                         <div class="container-fluid"> 
                             <div class="row playlist">
-
                             </div>
                         </div>   
                     </div>
@@ -82,12 +86,33 @@ a.custom-card:hover {
     </div>
 </div>
 <div class="app-drawer-overlay d-none animated fadeIn"></div>
+<script type="text/javascript" src="assets/scripts/main.07a59de7b920cd76b874.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script>
 
+function getUrlParameters(parameter, staticURL, decode){
+
+var currLocation = (staticURL.length)? staticURL : window.location.search,
+parArr = currLocation.split("?")[1].split("&"),
+returnBool = true;
+
+for(var i = 0; i < parArr.length; i++){
+    parr = parArr[i].split("=");
+    if(parr[0] == parameter){
+        return (decode) ? decodeURIComponent(parr[1]) : parr[1];
+        returnBool = true;
+    }else{
+        returnBool = false;            
+    }
+}
+    if(!returnBool) return false;  
+}
+
+var idParameter = getUrlParameters("list", "", true);
+
 $.ajax({ 
     type: 'GET', 
-    url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=5000&playlistId=PLp-dDxjZ139khO4MdVjxrYNY-uSXduqyW&key=AIzaSyDfbSiXsIQ64KS2uTQj2QSY92Id8xlxYDM', 
+    url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=5000&playlistId=' + idParameter +'&key=AIzaSyDfbSiXsIQ64KS2uTQj2QSY92Id8xlxYDM', 
     dataType: 'json',
     success: function (data) { 
 
@@ -98,7 +123,7 @@ $.ajax({
             console.log(items[i].snippet);
             playlist += `<div class="col-md-6 col-xl-3">
                                     <a href="video.php?id=${items[i].snippet.resourceId.videoId}" class="custom-card">
-                                    <img width="100%" src="${items[i].snippet.thumbnails.medium.url}" class="card-img-top">
+                                    <img width="100%" src="${items[i].snippet.thumbnails.maxres.url}" class="card-img-top">
                                     <div class="card-shadow-focus mb-3 widget-content">
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
@@ -111,7 +136,7 @@ $.ajax({
                                                     <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                                                 </div>
                                                 <div class="progress-sub-label">
-                                                    <div class="sub-label-left"><span class="dateofmatch">${items[i].snippet.publishedAt}</span></div>
+                                                    <div class="sub-label-left"><span class="dateofmatch">Published: ${items[i].snippet.publishedAt}</span></div>
                                                     <div class="sub-label-right"><div class="badge badge-dark">VOD</div></div>
                                                 </div>
                                             </div>

@@ -68,7 +68,7 @@ a.custom-card:hover {
                                                 <div class="main-card mb-3 card">
                                                     <div class="card-body p-2">
                                                         <div class="widget-chart-wrapper widget-chart-wrapper-lg opacity-10 m-0">
-                                                            <iframe width="100%" height="515" src="https://www.youtube.com/embed/<?php echo $_GET["id"];?>?autoplay=1"></iframe>
+                                                            <iframe width="100%" height="515" src="https://www.youtube.com/embed/<?php echo $_GET["id"];?>?autoplay=1&theme=dark"></iframe>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
@@ -79,66 +79,6 @@ a.custom-card:hover {
                                                                 <h6 class="menu-header-subtitle opacity-6">Published on 
                                                                     <?php echo $data->items['0']->snippet->publishedAt;?>
                                                                 </h6>
-                                                                <div class="mt-3 row">
-                                                                    <div class="col-sm-12 col-md-6">
-                                                                        <div class="card-border mb-sm-3 mb-md-0 border-light no-shadow card">
-                                                                            <div class="widget-content">
-                                                                                <div class="widget-content-outer">
-                                                                                    <div class="widget-content-wrapper">
-                                                                                        <div class="widget-content-left">
-                                                                                            <div class="widget-heading">
-                                                                                                Views
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="widget-content-right">
-                                                                                            <div class="widget-numbers line-height-1 text-primary">
-                                                                                                <span><?php echo $data->items['0']->statistics->viewCount;?></span></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="widget-progress-wrapper mt-1">
-                                                                                        <div class="progress-bar-xs progress">
-                                                                                            <div class="progress-bar bg-primary"
-                                                                                                 role="progressbar"
-                                                                                                 aria-valuenow="76"
-                                                                                                 aria-valuemin="0"
-                                                                                                 aria-valuemax="100"
-                                                                                                 style="width: 100%;"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-sm-12 col-md-6">
-                                                                        <div class="card-border border-light no-shadow card">
-                                                                            <div class="widget-content">
-                                                                                <div class="widget-content-outer">
-                                                                                    <div class="widget-content-wrapper">
-                                                                                        <div class="widget-content-left">
-                                                                                            <div class="widget-heading">
-                                                                                                Likes
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="widget-content-right">
-                                                                                            <div class="widget-numbers line-height-1 text-success">
-                                                                                                <span><?php echo $data->items['0']->statistics->likeCount;?></span></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="widget-progress-wrapper mt-1">
-                                                                                        <div class="progress-bar-xs progress-bar-animated progress">
-                                                                                            <div class="progress-bar bg-primary"
-                                                                                                 role="progressbar"
-                                                                                                 aria-valuenow="23"
-                                                                                                 aria-valuemin="0"
-                                                                                                 aria-valuemax="100"
-                                                                                                 style="width: 100%;"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -151,19 +91,64 @@ a.custom-card:hover {
     server="573181078953787394"
     channel="922954036905398312"
     width="605"
-    height="675"
+    height="585"
 ></widgetbot>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="no-gutters row">
+                                                <div class="col-md-6 col-xl-4">
+                                                    <div class="widget-content">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-right ml-0 mr-3">
+                                                                <div class="widget-numbers text-success"><?php echo $data->items['0']->statistics->viewCount;?></div>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Views</div>
+                                                                <div class="widget-subheading">Views</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4">
+                                                    <div class="widget-content">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-right ml-0 mr-3">
+                                                                <div class="widget-numbers text-warning"><?php echo $data->items['0']->statistics->likeCount;?></div>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Likes</div>
+                                                                <div class="widget-subheading">Likes</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4">
+                                                    <div class="widget-content">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-right ml-0 mr-3">
+                                                                <div class="widget-numbers text-danger"><?php echo $data->items['0']->statistics->commentCount;?></div>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Comments</div>
+                                                                <div class="widget-subheading">Comments</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
